@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#6d1f1f"
+    android:layout_gravity="top|center"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#6d1f1f"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout_container"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/tx_code20"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#000000"
+            android:background="@drawable/wr5"
+            android:textSize="10sp"
+            android:gravity="left" />
+        <TextView
+            android:id="@+id/tx_name20"
+            android:gravity="left"
+            android:layout_width="110dp"
+            android:background="@drawable/wr5"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/tx_qty20"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:background="@drawable/wr5"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:text="-" />
+        <TextView
+            android:id="@+id/tx_qty202"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:background="@drawable/wr5"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:text="-" />
+        <TextView
+            android:id="@+id/tx_noseri202"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:background="@drawable/wr5"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:text="-" />
+    </LinearLayout>
+</LinearLayout>

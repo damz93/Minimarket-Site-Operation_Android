@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+
+}
+
+android {
+
+    compileSdkVersion 33
+    buildToolsVersion '29.0.2'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "ap.miso"
+        minSdkVersion 16
+        targetSdkVersion 33
+        multiDexEnabled true
+        versionCode 21
+        versionName "1.0.1.4"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0']
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'app.miso'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    //noinspection DuplicatePlatformClasses
+   //
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.13'
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.2'
+    testImplementation 'junit:junit:'
+    //noinspection UseOfBundledGooglePlayServices
+    implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation 'com.android.support:multidex:1.0.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0@aar'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    implementation 'net.gotev:uploadservice:2.1'
+
+}

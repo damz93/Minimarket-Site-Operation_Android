@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d13a3a"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="INVENTORY PICKING"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="M I S O"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, "
+            android:textSize="12sp"
+            android:textColor="#653a3a" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tx_user3"
+            android:layout_height="wrap_content"
+            android:text="DEDY ALIM MUZAWWIR"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#653a3a" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:scrollbars="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/wr1"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="top|center"
+            android:columnCount="1" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginRight="5dp"
+                        android:text="Select Warehouse"/>
+
+                    <Spinner
+                        android:id="@+id/spn_warehouse"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="180dp"
+                        android:background="@drawable/wr3_"/>
+            </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginTop="16dp"
+                        android:text="Item Code"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:drawableLeft="@drawable/ic_scan_"
+                        android:background="@drawable/wr2"
+                        android:layout_marginTop="8dp"
+                        android:text="Tap to scan"
+                        android:gravity="center_vertical|start"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:id="@+id/btn_qr_code1"
+                        android:textColor="#f4f4f4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="or manual input"/>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                    android:layout_marginTop="6dp"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edt_kode_barang"
+                    android:background="@drawable/wr3"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center"
+                    android:hint="Item Code"
+                    android:maxLength="50"
+                    android:inputType="textNoSuggestions"
+                    android:textColor="#653a3a"
+                    android:textColorHint="#B18787"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edt_kode_barang2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:dropDownSelector="@null"
+                        android:background="@drawable/wr3"
+                        android:hint="Item Code/ Item Name"
+                        android:maxLength="100"
+                        android:textColor="#653a3a"
+                        android:textColorHint="#B18787"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center|center_vertical"
+                    android:orientation="horizontal">
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/wr2"
+                    android:drawableLeft="@drawable/ic_search_"
+                    android:textColor="#653a3a"
+                    android:layout_gravity="center_vertical|left"
+                    android:id="@+id/btn_cari_kode_barang"/>
+
+                    <Button
+
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/wr2"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_clear_"
+                        android:textSize="8sp"
+                        android:id="@+id/btn_clear_kode"
+                        android:textColor="#f4f4f4"
+                        android:layout_marginStart="5dp" />
+            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:background="@drawable/wr3_"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="#653a3a"
+                                android:text="Item Name : "/>
+                            <TextView
+                                android:id="@+id/txt_nama_barang"
+                                android:layout_gravity="left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="#653a3a"
+                                android:textColorHint="#B18787"
+                                android:layout_marginLeft="5dp"
+                                android:hint="...."
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_gravity="left"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="#653a3a"
+                                    android:text="Stock Available : "/>
+                            <TextView
+                                android:id="@+id/txt_qty_barang"
+                                android:layout_gravity="left"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="#653a3a"
+                                android:text="0"
+                                android:textColorHint="#B18787"
+                                android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_gravity="left"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="#653a3a"
+                                    android:text="Item Detail : "/>
+                                <TextView
+                                    android:id="@+id/txt_detail_barang"
+                                    android:layout_gravity="left"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:justificationMode="inter_word"
+                                    android:textColor="#653a3a"
+                                    android:hint="-"
+                                    android:textColorHint="#B18787"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/edt_qty_pinjam"
+                                android:background="@drawable/wr3"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:ems="10"
+                                android:gravity="left|center_vertical"
+                                android:hint="Qty"
+                                android:maxLength="5"
+                                android:inputType="textNoSuggestions|number"
+                                android:textColor="#653a3a"
+                                android:textColorHint="#B18787"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/wr2"
+                                android:layout_marginLeft="5dp"
+
+                                android:gravity="center"
+                                android:textSize="8sp"
+                                android:drawableLeft="@drawable/ic_brcode_"
+                                android:id="@+id/btn_brcode"
+                                android:textColor="#f4f4f4"
+                                android:layout_marginStart="5dp" />
+                            <EditText
+                                android:id="@+id/edt_noseri"
+                                android:background="@drawable/wr3"
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:textSize="16sp"
+                                android:gravity="left"
+                                android:layout_marginLeft="5dp"
+                                android:ems="10"
+                                android:hint="Serial Number..."
+                                android:maxLength="90"
+                                android:inputType="textNoSuggestions"
+                                android:textColor="#653a3a"
+                                android:textColorHint="#B18787"
+                                android:layout_marginStart="5dp" />
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/wr2"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:textSize="8sp"
+                                android:drawableLeft="@drawable/ic_clear_"
+                                android:id="@+id/btn_clear_serial"
+                                android:textColor="#f4f4f4"
+                                android:layout_marginStart="5dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|center_vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="#FFFFFF"
+                                android:text="Select Segment"/>
+                            <Spinner
+                                android:id="@+id/spn_segment"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_width="180dp"
+                                android:background="@drawable/wr3_"/>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edt_notes"
+                            android:background="@drawable/wr3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:gravity="left|center_vertical"
+                            android:ems="10"
+                            android:hint="Notes"
+                            android:layout_marginTop="10dp"
+                            android:maxLength="90"
+                            android:inputType="textNoSuggestions"
+                            android:textColor="#653a3a"
+                            android:textColorHint="#B18787"/>
+                        <EditText
+                            android:id="@+id/edt_gi_number"
+                            android:background="@drawable/wr3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:gravity="left|center_vertical"
+                            android:ems="10"
+                            android:hint="GI Number"
+                            android:layout_marginTop="10dp"
+                            android:maxLength="50"
+                            android:inputType="textNoSuggestions|number"
+                            android:textColor="#653a3a"
+                            android:textColorHint="#B18787"/>
+                        <Button
+                            android:id="@+id/btn_add_to_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wr2"
+                            android:text="Add to List"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/ic_add_"
+                            android:textColor="#ffffff"
+                            android:gravity="center_vertical|start"
+                            android:textSize="14sp" />
+                        <Button
+                            android:id="@+id/btn_kembali2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wr6"
+                            android:text="Back to Main Menu"
+                            android:drawableLeft="@drawable/ic_back_"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical|start"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="10dp"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+            </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:background="#6d1f1f">
+        <LinearLayout
+            android:id="@+id/ln_tgl_jam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:background="#f3f3f3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:textColor="#653a3a"
+                android:text="Item Code"
+                android:textSize="12sp"
+                android:background="@drawable/wr5"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="#653a3a"
+                android:gravity="center"
+                android:text="Item Name"
+                android:textSize="12sp"
+                android:background="@drawable/wr5"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Qty"
+                android:textColor="#653a3a"
+                android:textSize="12sp"
+                android:background="@drawable/wr5"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#653a3a"
+                android:gravity="center"
+                android:text="S Number"
+                android:textSize="12sp"
+                android:background="@drawable/wr5"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/ln_detail"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_inventory_log"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="10" />
+
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#6d1f1f"
+        android:layout_height="65dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:text=" Clear ALL "
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_del_"
+                    android:textColor="#f4f4f4"
+                    android:background="@drawable/wr6"/>
+                <Button
+                    android:id="@+id/btn_refrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text=" Refresh "
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_refresh_"
+                    android:textColor="#f4f4f4"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/wr2"/>
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_next_"
+                    android:text=" Next "
+                    android:textSize="10sp"
+                    android:textColor="#f4f4f4"
+                    android:background="@drawable/wr2"/>
+            </LinearLayout>
+</LinearLayout>

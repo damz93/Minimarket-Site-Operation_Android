@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d13a3a"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="MAIN MENU"
+            android:textSize="30sp"
+            android:textColor="#f4f4f4"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="M I S O"
+            android:textSize="24sp"
+            android:textColor="#f4f4f4"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, "
+            android:textSize="12sp"
+            android:textColor="#6d1f1f" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tx_user"
+            android:layout_height="wrap_content"
+            android:text="DEDY ALIM MUZAWWIR"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#6d1f1f" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="10"
+        android:scrollbars="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="13dp"
+                android:background="#EAEAEA"
+                android:paddingTop="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_gravity="center_horizontal|center_vertical|center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/btn_in_pick"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/s_menu1"
+                                android:layout_gravity="center"/>
+                            <Button
+                                android:id="@+id/btn_stok_op"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/s_menu2"
+                                android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/btn_qc"
+                                android:layout_width="200dp"
+                                android:background="@drawable/s_menu4"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"/>
+                            <Button
+                                android:id="@+id/btn_pengaturan"
+                                android:layout_width="200dp"
+                                android:background="@drawable/s_menu3"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"/>
+                    </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+    <WebView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        android:id="@+id/wbv_dd"/>
+    <TextView
+        android:id="@+id/txt_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:text="TextView" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="55dp"
+        android:gravity="center|center_vertical"
+        android:background="#6d1f1f">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" LOGOUT "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#f4f4f4"
+            android:layout_gravity="center"
+            android:background="@drawable/wr2"/>
+    </LinearLayout>
+</LinearLayout>

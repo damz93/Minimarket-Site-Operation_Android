@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d13a3a"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="STOCK OPNAME"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="M I S O"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, "
+            android:textSize="12sp"
+            android:textColor="#6d1f1f" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tx_user20"
+            android:layout_height="wrap_content"
+            android:text="DEDY ALIM MUZAWWIR"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#6d1f1f" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="5"
+        android:scrollbars="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/wr1"
+                android:layout_marginTop="10dp"
+                android:columnCount="1"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Tap the icon below to take a picture!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/im_kamera20"
+                        android:layout_weight="1"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/kamera" />
+
+                    <ImageView
+                        android:id="@+id/im_kameraS20"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_tgl_jam"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#6d1f1f"
+                    android:text=" ITEM-LIST "
+                    android:textColor="#f4f4f4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="650dp"
+                android:orientation="vertical"
+                android:background="#6d1f1f">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center_horizontal"
+                        android:background="#f3f3f3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="98dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#6d1f1f"
+                            android:text="Item Code"
+                            android:textSize="12sp"
+                            android:background="@drawable/wr5"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#6d1f1f"
+                            android:gravity="center"
+                            android:text="Item Name"
+                            android:textSize="12sp"
+                            android:background="@drawable/wr5"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Q_Syst"
+                            android:textColor="#6d1f1f"
+                            android:textSize="12sp"
+                            android:background="@drawable/wr5"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Q_Phis"
+                            android:textColor="#6d1f1f"
+                            android:textSize="12sp"
+                            android:background="@drawable/wr5"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="S Number"
+                            android:textColor="#6d1f1f"
+                            android:textSize="12sp"
+                            android:background="@drawable/wr5"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ln_detail20"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/list_inventory_log20"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:background="#6d1f1f"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_back20"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/wr6"
+            android:drawableLeft="@drawable/ic_back_"
+            android:text="back"
+            android:textColor="#f4f4f4"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_save20"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/wr2"
+            android:drawableLeft="@drawable/ic_save_"
+            android:text=" Save "
+            android:textColor="#f4f4f4"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="32"
+        tools:ignore="GradleOverrides" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MISO"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".Act_print_pdf_qc" />
+        <activity android:name=".Act_sign_qc" />
+        <activity android:name=".Act_qc2" />
+        <activity android:name=".Act_qc" />
+        <activity android:name=".Act_sign_teknisi" />
+        <activity android:name=".Act_sign_kepala" />
+        <activity android:name=".Act_print_pdf_pick" />
+        <activity android:name=".Act_tabel" />
+        <activity
+            android:name=".Act_print_pdf"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Act_pdf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Act_stok_opn2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Act_peminjaman2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Act_stok_opn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Act_peminjaman"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Act_pengaturan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Act_utama"
+            android:hardwareAccelerated="false"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Act_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="ExtraText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

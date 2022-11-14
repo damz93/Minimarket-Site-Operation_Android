@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d13a3a"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SETTING"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="M I S O"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User: "
+            android:textSize="12sp"
+            android:textColor="#653a3a" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tx_user2"
+            android:layout_height="wrap_content"
+            android:text="DEDY ALIM MUZAWWIR"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#653a3a" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="5"
+        android:scrollbars="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="14dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:layout_marginRight="14dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/wr1"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top|center"
+            android:columnCount="1" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="#653a3a"
+                        android:background="@drawable/wr3"
+                        android:text="UPDATE-FORM"/>
+                </LinearLayout>
+                <EditText
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/edit_pssekarang"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/wr3"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:hint="Current Password"
+                    android:maxLength="20"
+                    android:textColor="#653a3a"
+                    android:textColorHint="#000000"/>
+                <requestFocus />
+                <EditText
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edit_passw_baru"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/wr3"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:hint="New Password"
+                    android:maxLength="20"
+                    android:textColor="#653a3a"
+                    android:textColorHint="#000000"/>
+                <EditText
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edit_conf_pasw"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/wr3"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:hint="Confirm New Password"
+                    android:maxLength="20"
+                    android:textColor="#653a3a"
+                    android:textColorHint="#000000"/>
+                <Button
+                    android:id="@+id/btn_perbarui"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wr2"
+                    android:text="Update"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp" />
+                <Button
+                    android:id="@+id/btn_kembali"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wr4"
+                    android:text="Back to Main Menu"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+
+        android:id="@+id/txt_alert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EEEEDD"
+        android:visibility="gone"
+        android:text="" />
+</LinearLayout>
